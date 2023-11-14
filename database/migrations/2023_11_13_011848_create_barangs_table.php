@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nama');
             $table->integer('jumlah');
             $table->date('tgl_awal');
-            $table->enum('kondisi', ['baik', 'rusak']);
+            $table->boolean('kondisi');
             $table->foreignIdFor(Wahana::class);
             $table->timestamps();
         });

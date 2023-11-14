@@ -12,6 +12,7 @@ class Karyawan extends Model
 
     protected $table = 'karyawans';
     protected $primaryKey = 'id';
+    public $incrementing = false;
     protected $fillable = ['id', 'nama', 'alamat', 'tgl_lahir', 'jabatan', 'wahana_id'];
 
     public function Wahana(): BelongsTo

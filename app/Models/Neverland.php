@@ -11,5 +11,5 @@ class Neverland extends Model
 
     protected $table = 'neverlands';
     protected $primaryKey = 'id';
-    protected $fillable = ['nama', 'lokasi', 'pemilik'];
+    protected $fillable = ['nama', 'lokasi', 'pemilik', 'tgl_berdiri'];
 }

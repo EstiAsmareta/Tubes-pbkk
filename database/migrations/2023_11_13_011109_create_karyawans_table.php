@@ -13,10 +13,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('karyawans', function (Blueprint $table) {
-            $table->string('id',6);
+            $table->char('id',6)->primary();
             $table->string('nama');
             $table->string('alamat');
-            $table->date('tlg_lahir');
+            $table->date('tgl_lahir');
             $table->string('jabatan');
             $table->foreignIdFor(Wahana::class);
             $table->timestamps();

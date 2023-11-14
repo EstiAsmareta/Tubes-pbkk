@@ -12,7 +12,8 @@ class Wahana extends Model
 
     protected $table = 'wahanas';
     protected $primaryKey = 'id';
-    protected $fillable = ['id','nama', 'gambar', 'deskripsi', 'tgl_dibuka', 'luas_area', 'neverland_id'];
+    public $incrementing = false;
+    protected $fillable = ['id','nama', 'gambar', 'deskripsi', 'tgl_dibuka', 'luas_area', 'neverland_id', 'kategori'];
 
     public function Neverland(): BelongsTo
     {
